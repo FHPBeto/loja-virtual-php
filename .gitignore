@@ -1,0 +1,59 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Composer
+vendor/
+composer.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Cache
+cache/
+tmp/
+temp/
+
+# Build
+dist/
+build/
+
+# Node (se usar npm/webpack)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Uploads
+uploads/
+storage/
+public/uploads/
+
+# PHP
+.php_cs.cache
+.phpunit.result.cache
+*.phar
+
+# Misc
+.cache/
+*.bak
+*.tmp
