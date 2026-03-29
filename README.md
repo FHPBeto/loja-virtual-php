@@ -1,4 +1,4 @@
-# 🛍️ Loja Virtual PHP
+   Loja Virtual PHP
 
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&logo=php)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
@@ -7,65 +7,65 @@
 
 Plataforma de e-commerce completa desenvolvida com PHP e MySQL. Inclui carrinho de compras, painel administrativo com CRUD de produtos, sistema de pedidos, autenticação de usuários e gerenciamento de inventário.
 
-## 🎯 Objetivo
+  Objetivo
 
 Criar uma solução de e-commerce funcional e profissional, demonstrando boas práticas em desenvolvimento web com PHP tradicional, gerenciamento de banco de dados relacional e segurança de aplicações.
 
-## ✨ Funcionalidades
+   Funcionalidades
 
-### Cliente
-- 🛍️ Catálogo dinâmico de produtos com filtros
-- 🔍 Sistema de busca e categorização
-- 🛒 Carrinho de compras com persistência
-- 💳 Checkout e processamento de pedidos
-- 👤 Autenticação e gerenciamento de conta
-- 📦 Histórico de pedidos
-- ⭐ Sistema de avaliações (opcional)
+  Cliente
+- Catálogo dinâmico de produtos com filtros
+-  Sistema de busca e categorização
+-  Carrinho de compras com persistência
+-  Checkout e processamento de pedidos
+-  Autenticação e gerenciamento de conta
+-  Histórico de pedidos
+-  Sistema de avaliações (opcional)
 
-### Administrador
-- 📊 Painel administrativo completo
-- ➕ Adicionar novos produtos
-- ✏️ Editar informações de produtos
-- 🗑️ Deletar produtos
-- 📈 Visualizar vendas e pedidos
-- 👥 Gerenciar usuários
-- 🔐 Controle de acesso
+   Administrador
+-  Painel administrativo completo
+-  Adicionar novos produtos
+-  Editar informações de produtos
+-  Deletar produtos
+-  Visualizar vendas e pedidos
+-  Gerenciar usuários
+-  Controle de acesso
 
-## 🛠️ Tecnologias Utilizadas
+   Tecnologias Utilizadas
 
-### Backend
-- **PHP 7.4+** - Linguagem de programação server-side
-- **MySQL 5.7+** - Banco de dados relacional
-- **Session Management** - Gerenciamento de sessões de usuário
-- **PDO** - Acesso seguro ao banco de dados
+   Backend
+- PHP 7.4+ - Linguagem de programação server-side
+- MySQL 5.7+ - Banco de dados relacional
+- Session Management - Gerenciamento de sessões de usuário
+- PDO - Acesso seguro ao banco de dados
 
-### Frontend
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização moderna
-- **Bootstrap 5** - Framework CSS responsivo
-- **JavaScript** - Interatividade no cliente
-- **jQuery** - Manipulação do DOM
+   Frontend
+- HTML5 - Estrutura semântica
+- CSS3 - Estilização moderna
+- Bootstrap 5 - Framework CSS responsivo
+- JavaScript - Interatividade no cliente
+- jQuery - Manipulação do DOM
 
-## 📋 Pré-requisitos
+   Pré-requisitos
 
-- **PHP 7.4+** com extensões: PDO, MySQLi
-- **MySQL 5.7+** ou **MariaDB**
-- **Apache/Nginx** com suporte a .htaccess
-- **Composer** (opcional, para gerenciamento de dependências)
-- **Git** para versionamento
+- PHP 7.4+ com extensões: PDO, MySQLi
+- MySQL 5.7+ ou MariaDB
+- Apache/Nginx com suporte a .htaccess
+- Composer (opcional, para gerenciamento de dependências)
+- Git para versionamento
 
-## 🚀 Instalação e Setup
+   Instalação e Setup
 
-### 1. Clonar o Repositório
+   1. Clonar o Repositório
 
 ```bash
 git clone https://github.com/FHPBeto/loja-virtual-php.git
 cd loja-virtual-php
 ```
 
-### 2. Configurar Banco de Dados
+   2. Configurar Banco de Dados
 
-#### Criar banco de dados
+   Criar banco de dados
 
 ```bash
 mysql -u root -p
@@ -76,13 +76,13 @@ CREATE DATABASE loja_virtual CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE loja_virtual;
 ```
 
-#### Importar schema
+   Importar schema
 
 ```bash
 mysql -u root -p loja_virtual < database/schema.sql
 ```
 
-### 3. Configurar Variáveis de Ambiente
+  3. Configurar Variáveis de Ambiente
 
 ```bash
 cp .env.example .env
@@ -108,9 +108,9 @@ MAIL_USER=seu_email@gmail.com
 MAIL_PASSWORD=sua_senha_app
 ```
 
-### 4. Configurar Servidor Web
+  4. Configurar Servidor Web
 
-#### Apache (.htaccess)
+  Apache (.htaccess)
 
 ```apache
 <IfModule mod_rewrite.c>
@@ -122,7 +122,7 @@ MAIL_PASSWORD=sua_senha_app
 </IfModule>
 ```
 
-#### Nginx
+   Nginx
 
 ```nginx
 location / {
@@ -132,7 +132,7 @@ location / {
 }
 ```
 
-### 5. Iniciar Servidor
+   5. Iniciar Servidor
 
 ```bash
 # Usando PHP built-in server
@@ -142,7 +142,7 @@ php -S localhost:8000
 # Acessar: http://localhost/loja-virtual-php
 ```
 
-## 📁 Estrutura do Projeto
+  Estrutura do Projeto
 
 ```
 loja-virtual-php/
@@ -186,11 +186,11 @@ loja-virtual-php/
 └── LICENSE
 ```
 
-## 🗄️ Banco de Dados
+   Banco de Dados
 
-### Tabelas Principais
+   Tabelas Principais
 
-**usuarios**
+usuarios  
 ```sql
 CREATE TABLE usuarios (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -206,7 +206,7 @@ CREATE TABLE usuarios (
 );
 ```
 
-**produtos**
+produtos
 ```sql
 CREATE TABLE produtos (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -221,7 +221,7 @@ CREATE TABLE produtos (
 );
 ```
 
-**pedidos**
+pedidos
 ```sql
 CREATE TABLE pedidos (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -233,7 +233,7 @@ CREATE TABLE pedidos (
 );
 ```
 
-**itens_pedido**
+itens_pedido
 ```sql
 CREATE TABLE itens_pedido (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -246,9 +246,9 @@ CREATE TABLE itens_pedido (
 );
 ```
 
-## 🔐 Segurança
+   Segurança
 
-### Implementações
+   Implementações
 
 - ✅ Prepared Statements (PDO) contra SQL Injection
 - ✅ Password Hashing com `password_hash()`
@@ -257,7 +257,7 @@ CREATE TABLE itens_pedido (
 - ✅ Input Validation e Sanitization
 - ✅ Output Escaping
 
-### Boas Práticas
+   Boas Práticas
 
 ```php
 // ✅ Usar Prepared Statements
@@ -274,11 +274,11 @@ $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 echo htmlspecialchars($usuario['nome']);
 ```
 
-## 🧪 Testando a Aplicação
+  Testando a Aplicação
 
-1. **Inicie o servidor**: `php -S localhost:8000`
-2. **Acesse**: `http://localhost:8000`
-3. **Teste as funcionalidades**:
+1. Inicie o servidor: `php -S localhost:8000`
+2. Acesse: `http://localhost:8000`
+3. Teste as funcionalidades:
    - Registrar novo usuário
    - Navegar pelo catálogo
    - Adicionar produtos ao carrinho
@@ -286,9 +286,9 @@ echo htmlspecialchars($usuario['nome']);
    - Acessar painel admin (login: admin / senha: admin)
    - Adicionar/editar/deletar produtos
 
-## 🐛 Troubleshooting
+   Troubleshooting
 
-### Erro: "Connection refused"
+   Erro: "Connection refused"
 ```bash
 # Verificar se MySQL está rodando
 sudo systemctl start mysql
@@ -296,20 +296,20 @@ sudo systemctl start mysql
 # Ou verificar credenciais em .env
 ```
 
-### Erro: "Call to undefined function"
+   Erro: "Call to undefined function"
 ```bash
 # Verificar se extensões PHP estão habilitadas
 php -m | grep pdo
 ```
 
-### Erro: "Permission denied"
+   Erro: "Permission denied"
 ```bash
 # Ajustar permissões de pastas
 chmod -R 755 assets/
 chmod -R 777 uploads/
 ```
 
-## 📚 Recursos Úteis
+   Recursos Úteis
 
 - [Documentação PHP](https://www.php.net/docs.php)
 - [Manual MySQL](https://dev.mysql.com/doc/)
@@ -317,7 +317,7 @@ chmod -R 777 uploads/
 - [OWASP Security](https://owasp.org/www-project-top-ten/)
 - [PHP Security Best Practices](https://www.php.net/manual/en/security.php)
 
-## 🤝 Contribuindo
+   Contribuindo
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -327,20 +327,20 @@ Contribuições são bem-vindas! Para contribuir:
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abra um Pull Request
 
-## 📝 Licença
+   Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👤 Autor
+   Autor
 
-**FHPBeto**
+FHPBeto
 - GitHub: [@FHPBeto](https://github.com/FHPBeto)
 - Email: [seu-email@example.com]
 
-## 📞 Suporte
+   Suporte
 
 Encontrou um problema? Abra uma [issue](https://github.com/FHPBeto/loja-virtual-php/issues) no repositório.
 
 ---
 
-**Desenvolvido com ❤️ como projeto educacional de e-commerce**
+"Desenvolvido como projeto educacional de e-commerce"
